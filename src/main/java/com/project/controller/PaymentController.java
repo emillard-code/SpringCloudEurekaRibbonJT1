@@ -15,7 +15,9 @@ public class PaymentController {
 
     @GetMapping("/payNow/{price}")
     public String payNow(@PathVariable int price) {
+
         return "payment with " + price + " is successfull & service port : " + port;
+
     }
 
 }
